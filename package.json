@@ -1,0 +1,46 @@
+{
+  "name": "react-swapi-hooks",
+  "description": "A small React app using the upcoming feature Hooks and the StarWars API.",
+  "version": "0.1.0",
+  "author": "Alessio Minichiello <minichielloalessio@gmail.com>",
+  "license": "ISC",
+  "homepage": "http://lssmn.github.com/react-swapi-hooks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lssmn/react-swapi-hooks.git"
+  },
+  "scripts": {
+    "flow": "flow",
+    "precommit": "pretty-quick --staged",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "polished": "^2.3.1",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-scripts": "2.1.1",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react-hooks": "^0.0.0",
+    "flow-bin": "^0.89.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.2.0",
+    "prettier": "1.15.3",
+    "pretty-quick": "^1.8.0"
+  }
+}

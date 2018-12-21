@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/eslint/*
+.*/node_modules/prettier/*
+
+[options]
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.css
+module.file_ext=.scss
+module.file_ext=.svg
+module.file_ext=.jpg
+module.file_ext=.png
+
+[libs]
+flow-typed/
