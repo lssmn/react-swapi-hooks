@@ -11,6 +11,6 @@ $ yarn install
 $ yarn dev
 ```
 
-# Live demo
+## Live demo
 
 [Click here to see the live demo](http://lssmn.github.io/react-swapi-hooks/)
