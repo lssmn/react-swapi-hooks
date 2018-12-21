@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/react-swapi-hooks/static/js/runtime~main.9321cfb7.js"
   },
   {
-    "revision": "be218dcea55f722dd780",
-    "url": "/react-swapi-hooks/static/js/main.be218dce.chunk.js"
+    "revision": "9d1a726cc4a57305a732",
+    "url": "/react-swapi-hooks/static/js/main.9d1a726c.chunk.js"
   },
   {
     "revision": "c4182fad3afec5890aa3",
     "url": "/react-swapi-hooks/static/js/1.c4182fad.chunk.js"
   },
   {
-    "revision": "276ea136c34b1a6a39d7ef584e30c5ef",
+    "revision": "4d9828c398d48bd8d9713810d93f280c",
     "url": "/react-swapi-hooks/index.html"
   }
 ];
