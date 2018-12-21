@@ -3,6 +3,8 @@
 import { normalize } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
+import type { ThemeProps } from '../../themes';
+
 const GlobalStyle = createGlobalStyle`
   ${normalize()}
 
@@ -14,8 +16,8 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${props => props.theme.color.text};
-    background-color: ${p => p.theme.color.background};
+    color: ${(p: ThemeProps) => p.theme.color.text};
+    background-color: ${(p: ThemeProps) => p.theme.color.background};
   }
 
   input, select {
@@ -28,8 +30,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: ${p => p.theme.color.background};
-    color: ${props => props.theme.color.text};
+    background-color: ${(p: ThemeProps) => p.theme.color.background};
+    color: ${(p: ThemeProps) => p.theme.color.text};
     border: 1px solid ${p => p.theme.color.border};
   }
 `;

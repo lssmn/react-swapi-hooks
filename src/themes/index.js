@@ -4,7 +4,7 @@ import base from './base';
 import dark from './dark';
 import light from './light';
 
-export default {
+const theme = {
   dark: {
     ...base,
     ...dark
@@ -14,3 +14,11 @@ export default {
     ...light
   }
 };
+
+export type Theme = typeof base & (typeof dark | typeof light);
+
+export type ThemeProps = {
+  theme: Theme
+};
+
+export default theme;

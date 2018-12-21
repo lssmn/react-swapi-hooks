@@ -11,7 +11,6 @@
   },
   "scripts": {
     "flow": "flow",
-    "precommit": "pretty-quick --staged",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,14 +32,11 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "eslint-plugin-flow": "^2.29.1",
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react-hooks": "^0.0.0",
     "flow-bin": "^0.89.0",
     "gh-pages": "^2.0.1",
-    "husky": "^1.2.0",
-    "prettier": "1.15.3",
-    "pretty-quick": "^1.8.0"
+    "prettier": "1.15.3"
   }
 }

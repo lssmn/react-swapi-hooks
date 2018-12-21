@@ -4,7 +4,7 @@ import React, { type Node } from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   text-align: center;
 `;
 
-export const Switch = styled.div`
+const Switch = styled.div`
   width: 100%;
 `;
 

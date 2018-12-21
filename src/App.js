@@ -6,35 +6,24 @@ import { ThemeProvider } from 'styled-components';
 import themes from './themes';
 import config from './constants/config';
 import fetchPeople from './services/fetchPeople';
+import useDebounce from './hooks/useDebounce';
 
 import GlobalStyle from './components/utilities/GlobalStyle';
 import Loader from './components/common/Loader';
 import Input from './components/common/Input';
+import Grid from './components/common/Grid';
 import SwitchTheme from './components/common/SwitchTheme';
 import Header from './components/header/Header';
 import NoResults from './components/sections/NoResults';
 import Person, { type PersonData } from './components/sections/Person';
 
-import { Wrapper, Content, Grid } from './App.styles';
+import { Wrapper, Content } from './App.styles';
 
 const App = () => {
   const [name, setName] = useState('');
   const [people, setPeople] = useState(null);
   const [theme, setTheme] = useState('dark');
-  const [debouncedName, setDebouncedName] = useState('');
-
-  useEffect(
-    () => {
-      const timeout = setTimeout(() => {
-        setDebouncedName(name);
-      }, config.debounceDelay);
-
-      return () => {
-        clearTimeout(timeout);
-      };
-    },
-    [name]
-  );
+  const debouncedName = useDebounce(name, config.debounceDelay);
 
   useEffect(
     () => {

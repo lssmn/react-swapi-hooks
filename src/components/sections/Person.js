@@ -3,31 +3,29 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import type { ThemeProps } from '../../themes';
+
 const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
-  padding: ${p => p.theme.size.xs} 0;
-  margin: ${p => p.theme.size.xs};
+  padding: ${(p: ThemeProps) => p.theme.size.s} 0;
+  margin: ${(p: ThemeProps) => p.theme.size.xs};
 `;
 
 const Heading = styled.span`
-  border-bottom: 1px solid ${p => p.theme.color.border};
-  padding-bottom: ${p => p.theme.size.xs};
-  margin-bottom: ${p => p.theme.size.s};
+  border-bottom: 1px solid ${(p: ThemeProps) => p.theme.color.border};
+  padding-bottom: ${(p: ThemeProps) => p.theme.size.xs};
+  margin-bottom: ${(p: ThemeProps) => p.theme.size.s};
 `;
 
 const Row = styled.div`
-  margin-bottom: ${p => p.theme.size.xs};
+  margin-bottom: ${(p: ThemeProps) => p.theme.size.xs};
 `;
 
 const Label = styled.span`
-  margin-right: ${p => p.theme.size.xs};
+  margin-right: ${(p: ThemeProps) => p.theme.size.xs};
   font-weight: 400;
   color: #999;
-`;
-
-const Value = styled.span`
-  font-weight: normal;
 `;
 
 export type PersonData = {
@@ -46,11 +44,11 @@ const Person = ({ data }: Props) => {
       <Heading>{name}</Heading>
       <Row>
         <Label>Mass</Label>
-        <Value>{mass}</Value>
+        <span>{mass}</span>
       </Row>
       <Row>
         <Label>Height</Label>
-        <Value>{height}</Value>
+        <span>{height}</span>
       </Row>
     </Wrapper>
   );

@@ -3,8 +3,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import type { ThemeProps } from '../../themes';
+
 const Path = styled.path`
-  fill: ${p => p.theme.color.logo};
+  fill: ${(p: ThemeProps) => p.theme.color.logo};
 `;
 
 const Logo = () => (

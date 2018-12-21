@@ -2,14 +2,10 @@
 
 import styled from 'styled-components';
 
-export const Wrapper = styled.main`
-  padding: ${p => p.theme.size.xl};
-`;
+import type { ThemeProps } from './themes';
 
-export const Grid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: ${p => p.theme.size.l} 0;
+export const Wrapper = styled.main`
+  padding: ${(p: ThemeProps) => p.theme.size.xl};
 `;
 
 export const Content = styled.div`
@@ -17,5 +13,5 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${p => p.theme.size.s} 0;
+  padding: ${(p: ThemeProps) => p.theme.size.s} 0;
 `;

@@ -9,13 +9,14 @@ import fetchPeople from './services/fetchPeople';
 
 import GlobalStyle from './components/utilities/GlobalStyle';
 import Loader from './components/common/Loader';
+import Grid from './components/common/Grid';
 import Input from './components/common/Input';
 import SwitchTheme from './components/common/SwitchTheme';
 import Header from './components/header/Header';
 import NoResults from './components/sections/NoResults';
 import Person, { type PersonData } from './components/sections/Person';
 
-import { Wrapper, Content, Grid } from './App.styles';
+import { Wrapper, Content } from './App.styles';
 
 type State = {
   name: string,
