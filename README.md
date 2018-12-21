@@ -2,14 +2,9 @@
 
 A small React app built with [create-react-app](https://github.com/facebook/create-react-app) using the upcoming feature [Hooks](https://reactjs.org/docs/hooks-intro.html) and the [StarWars API](https://swapi.co/).
 
-## Getting started
+## Live demo
 
-```sh
-$ git clone https://github.com/lssmn/react-swapi-hooks.git
-$ cd react-swapi-hooks
-$ yarn install
-$ yarn dev
-```
+[Click here to open the live demo](http://lssmn.github.io/react-swapi-hooks/)
 
 ## Tools and technologies
 
@@ -18,6 +13,15 @@ $ yarn dev
 - CreateReactApp
 - Flow
 
-## Live demo
+## Function Component using Hooks vs Class Component
 
-[Click here to open the live demo](http://lssmn.github.io/react-swapi-hooks/)
+[twitter.com/_lssmn/status/1076132195557879809](https://twitter.com/_lssmn/status/1076132195557879809)
+
+## Run locally
+
+```sh
+$ git clone https://github.com/lssmn/react-swapi-hooks.git
+$ cd react-swapi-hooks
+$ yarn
+$ yarn dev
+```
